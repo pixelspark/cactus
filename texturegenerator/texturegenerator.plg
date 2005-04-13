@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: texturegenerator - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP67A.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_WINDOWS" /D "__WINDOWS__" /D "__WXMSW__" /D DEBUG=1 /D "__WIN32__" /D WINVER=0x0400 /D "wxUSE_DYNAMIC_LOADER" /Fp"Debug/texturegenerator.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\cactus\texturegenerator\texturegenerator.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP67A.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP67B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib wx.lib comctl32.lib wsock32.lib jpeg.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/texturegenerator.pdb" /debug /machine:I386 /nodefaultlib:"libcd.lib" /out:"Debug/texturegenerator.exe" /pdbtype:sept 
+.\Debug\texturegenerator.obj
+\cactus\lib\cactusd.lib
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP67B.tmp"
+<h3>Output Window</h3>
+Compiling...
+texturegenerator.cpp
+Compiler terminating.  Please wait.. Abort complete.
+cl.exe terminated at user request.
+
+</pre>
+</body>
+</html>

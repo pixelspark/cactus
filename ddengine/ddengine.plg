@@ -1,0 +1,372 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ddengine - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP30F.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/ddengine.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"Z:\ddengine\Edge.cpp"
+"Z:\ddengine\Global.cpp"
+"Z:\ddengine\Light.cpp"
+"Z:\ddengine\Object.cpp"
+"Z:\ddengine\Triangle.cpp"
+"Z:\ddengine\Vertex.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP30F.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP310.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/ddengine.pdb" /debug /machine:I386 /out:"Debug/ddengine.exe" /pdbtype:sept 
+.\Debug\Camera.obj
+.\Debug\CoreObject.obj
+.\Debug\Edge.obj
+.\Debug\Environment.obj
+.\Debug\Global.obj
+.\Debug\Light.obj
+.\Debug\Material.obj
+.\Debug\Math.obj
+.\Debug\Matrix.obj
+.\Debug\Object.obj
+.\Debug\Triangle.obj
+.\Debug\Vector.obj
+.\Debug\Vertex.obj
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP310.tmp"
+<h3>Output Window</h3>
+Compiling...
+Edge.cpp
+z:\ddengine\triangle.h(12) : error C2629: unexpected 'class Triangle ('
+z:\ddengine\triangle.h(12) : error C2238: unexpected token(s) preceding ';'
+z:\ddengine\triangle.h(18) : error C2146: syntax error : missing ';' before identifier 'GetMedium'
+z:\ddengine\triangle.h(18) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(25) : error C2143: syntax error : missing ';' before '*'
+z:\ddengine\triangle.h(25) : error C2501: 'Object' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(25) : error C2501: 'parent' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(28) : error C2146: syntax error : missing ';' before identifier 'p1'
+z:\ddengine\triangle.h(28) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(28) : error C2501: 'p1' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(29) : error C2146: syntax error : missing ';' before identifier 'p2'
+z:\ddengine\triangle.h(29) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(29) : error C2501: 'p2' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(30) : error C2146: syntax error : missing ';' before identifier 'p3'
+z:\ddengine\triangle.h(30) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(30) : error C2501: 'p3' : missing storage-class or type specifiers
+z:\ddengine\object.h(27) : error C2065: 'Vertex' : undeclared identifier
+z:\ddengine\object.h(27) : error C2059: syntax error : '>'
+z:\ddengine\object.h(51) : error C2065: 'b' : undeclared identifier
+z:\ddengine\object.h(51) : error C2065: 'c' : undeclared identifier
+z:\ddengine\object.h(51) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\object.h(66) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\camera.h(13) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\camera.h(47) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\camera.h(49) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\camera.h(51) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\camera.h(53) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\camera.h(55) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\camera.h(57) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\camera.h(59) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\camera.h(61) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\camera.h(63) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\camera.h(65) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\camera.h(67) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\camera.h(69) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\camera.h(73) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.h(13) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.h(29) : error C2065: 'y' : undeclared identifier
+z:\ddengine\vertex.h(29) : error C2065: 'z' : undeclared identifier
+z:\ddengine\vertex.h(29) : error C2143: syntax error : missing ',' before ';'
+z:\ddengine\vertex.h(30) : error C2065: 'v' : undeclared identifier
+z:\ddengine\vertex.h(31) : error C2065: 'ny' : undeclared identifier
+z:\ddengine\vertex.h(31) : error C2065: 'tx' : undeclared identifier
+z:\ddengine\vertex.h(31) : error C2065: 'ty' : undeclared identifier
+z:\ddengine\vertex.h(31) : error C2143: syntax error : missing ',' before ';'
+z:\ddengine\vertex.h(39) : error C2065: 'Camera' : undeclared identifier
+z:\ddengine\vertex.h(49) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\edge.h(8) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\edge.h(16) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\edge.cpp(3) : error C2653: 'Edge' : is not a class or namespace name
+z:\ddengine\edge.cpp(3) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\edge.cpp(5) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\edge.cpp(7) : error C2653: 'Edge' : is not a class or namespace name
+z:\ddengine\edge.cpp(7) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\edge.cpp(10) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\edge.cpp(12) : error C2653: 'Edge' : is not a class or namespace name
+z:\ddengine\edge.cpp(12) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\edge.cpp(13) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\edge.cpp(15) : error C2653: 'Edge' : is not a class or namespace name
+z:\ddengine\edge.cpp(15) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\edge.cpp(17) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\edge.cpp(19) : error C2653: 'Edge' : is not a class or namespace name
+z:\ddengine\edge.cpp(19) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\edge.cpp(21) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\edge.cpp(22) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\edge.cpp(22) : fatal error C1001: INTERNAL COMPILER ERROR
+        (compiler file 'YÃ', line 1) 
+         Please choose the Technical Support command on the Visual C++ 
+         Help menu, or open the Technical Support help file for more information
+Global.cpp
+fatal error C1083: Cannot open source file: 'Z:\ddengine\Global.cpp': No such file or directory
+Light.cpp
+z:\ddengine\light.h(6) : fatal error C1021: invalid preprocessor command 'nclude'
+Object.cpp
+z:\ddengine\triangle.h(12) : error C2629: unexpected 'class Triangle ('
+z:\ddengine\triangle.h(12) : error C2238: unexpected token(s) preceding ';'
+z:\ddengine\triangle.h(18) : error C2146: syntax error : missing ';' before identifier 'GetMedium'
+z:\ddengine\triangle.h(18) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(25) : error C2143: syntax error : missing ';' before '*'
+z:\ddengine\triangle.h(25) : error C2501: 'Object' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(25) : error C2501: 'parent' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(28) : error C2146: syntax error : missing ';' before identifier 'p1'
+z:\ddengine\triangle.h(28) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(28) : error C2501: 'p1' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(29) : error C2146: syntax error : missing ';' before identifier 'p2'
+z:\ddengine\triangle.h(29) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(29) : error C2501: 'p2' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(30) : error C2146: syntax error : missing ';' before identifier 'p3'
+z:\ddengine\triangle.h(30) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(30) : error C2501: 'p3' : missing storage-class or type specifiers
+z:\ddengine\vertex.h(22) : error C2143: syntax error : missing ';' before '*'
+z:\ddengine\vertex.h(22) : error C2501: 'Object' : missing storage-class or type specifiers
+z:\ddengine\vertex.h(22) : error C2501: 'parent' : missing storage-class or type specifiers
+z:\ddengine\object.h(32) : error C2146: syntax error : missing ';' before identifier 'parent'
+z:\ddengine\object.h(32) : error C2501: 'Scene' : missing storage-class or type specifiers
+z:\ddengine\object.h(32) : error C2501: 'parent' : missing storage-class or type specifiers
+z:\ddengine\object.h(47) : error C2061: syntax error : identifier 'Material'
+z:\ddengine\object.cpp(25) : error C2039: 'parent' : is not a member of 'Vertex'
+        z:\ddengine\vertex.h(13) : see declaration of 'Vertex'
+z:\ddengine\object.cpp(31) : error C2039: 'parent' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(92) : error C2065: 'Material' : undeclared identifier
+z:\ddengine\object.cpp(92) : error C2146: syntax error : missing ')' before identifier 'm'
+z:\ddengine\object.cpp(92) : error C2182: 'SetMaterial' : illegal use of type 'void'
+z:\ddengine\object.cpp(92) : error C2350: 'Object::SetMaterial' is not a static member
+z:\ddengine\object.cpp(92) : error C2059: syntax error : ')'
+z:\ddengine\object.cpp(92) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\object.cpp(92) : error C2447: missing function header (old-style formal list?)
+z:\ddengine\object.cpp(119) : error C2039: 'p1' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(119) : error C2227: left of '->registerNeighbor' must point to class/struct/union
+z:\ddengine\object.cpp(120) : error C2039: 'p2' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(120) : error C2227: left of '->registerNeighbor' must point to class/struct/union
+z:\ddengine\object.cpp(121) : error C2039: 'p3' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(121) : error C2227: left of '->registerNeighbor' must point to class/struct/union
+z:\ddengine\object.cpp(128) : error C2664: 'void __thiscall Object::AddVertex(class Vertex *)' : cannot convert parameter 1 from 'class Vertex' to 'class Vertex *'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+z:\ddengine\object.cpp(133) : error C2228: left of '.SetUV' must have class/struct/union type
+z:\ddengine\object.cpp(138) : error C2661: 'Triangle::Triangle' : no overloaded function takes 3 parameters
+z:\ddengine\object.cpp(216) : error C2064: term does not evaluate to a function
+z:\ddengine\object.cpp(217) : error C2064: term does not evaluate to a function
+z:\ddengine\object.cpp(222) : error C2064: term does not evaluate to a function
+z:\ddengine\object.cpp(223) : error C2064: term does not evaluate to a function
+z:\ddengine\object.cpp(232) : error C2039: 'transform' : is not a member of 'Vector'
+        z:\ddengine\vector.h(9) : see declaration of 'Vector'
+z:\ddengine\object.cpp(244) : error C2228: left of '.GetClone' must have class/struct/union type
+z:\ddengine\object.cpp(246) : error C2374: 'i' : redefinition; multiple initialization
+        z:\ddengine\object.cpp(243) : see declaration of 'i'
+z:\ddengine\object.cpp(247) : error C2228: left of '.GetClone' must have class/struct/union type
+z:\ddengine\object.cpp(250) : error C2039: 'material' : is not a member of 'Object'
+        z:\ddengine\object.h(21) : see declaration of 'Object'
+z:\ddengine\object.cpp(250) : error C2065: 'materual' : undeclared identifier
+z:\ddengine\object.cpp(262) : error C2228: left of '.degenerated' must have class/struct/union type
+z:\ddengine\object.cpp(282) : error C2039: 'p1' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(283) : error C2039: 'p2' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(284) : error C2039: 'p3' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(285) : error C2228: left of '.pos' must have class/struct/union type
+z:\ddengine\object.cpp(287) : error C2228: left of '.pos' must have class/struct/union type
+z:\ddengine\object.cpp(289) : error C2228: left of '.pos' must have class/struct/union type
+z:\ddengine\object.cpp(289) : error C2228: left of '.length' must have class/struct/union type
+z:\ddengine\object.cpp(290) : error C2039: 'length' : is not a member of 'Vector'
+        z:\ddengine\vector.h(9) : see declaration of 'Vector'
+z:\ddengine\object.cpp(291) : error C2039: 'length' : is not a member of 'Vector'
+        z:\ddengine\vector.h(9) : see declaration of 'Vector'
+z:\ddengine\object.cpp(293) : error C2228: left of '.n' must have class/struct/union type
+z:\ddengine\object.cpp(294) : error C2065: 'nbc' : undeclared identifier
+z:\ddengine\object.cpp(294) : error C2679: binary '=' : no operator defined which takes a right-hand operand of type 'class Vector' (or there is no acceptable conversion)
+z:\ddengine\object.cpp(295) : error C2228: left of '.n' must have class/struct/union type
+z:\ddengine\object.cpp(297) : error C2065: 'uab' : undeclared identifier
+z:\ddengine\object.cpp(297) : error C2228: left of '.u' must have class/struct/union type
+z:\ddengine\object.cpp(298) : error C2065: 'vab' : undeclared identifier
+z:\ddengine\object.cpp(298) : error C2228: left of '.v' must have class/struct/union type
+z:\ddengine\object.cpp(299) : error C2065: 'ubc' : undeclared identifier
+z:\ddengine\object.cpp(300) : error C2065: 'vbc' : undeclared identifier
+z:\ddengine\object.cpp(301) : error C2065: 'uca' : undeclared identifier
+z:\ddengine\object.cpp(301) : error C2228: left of '.u' must have class/struct/union type
+z:\ddengine\object.cpp(302) : error C2065: 'vca' : undeclared identifier
+z:\ddengine\object.cpp(302) : error C2228: left of '.v' must have class/struct/union type
+z:\ddengine\object.cpp(305) : error C2228: left of '.Length' must have class/struct/union type
+z:\ddengine\object.cpp(309) : error C2228: left of '.Normalize' must have class/struct/union type
+z:\ddengine\object.cpp(316) : error C2664: 'void __thiscall Object::AddVertex(class Vertex *)' : cannot convert parameter 1 from 'class Vertex' to 'class Vertex *'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+z:\ddengine\object.cpp(317) : error C2664: 'void __thiscall Object::AddVertex(class Vertex *)' : cannot convert parameter 1 from 'class Vertex' to 'class Vertex *'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+z:\ddengine\object.cpp(318) : error C2664: 'void __thiscall Object::AddVertex(class Vertex *)' : cannot convert parameter 1 from 'class Vertex' to 'class Vertex *'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+z:\ddengine\object.cpp(320) : error C2228: left of '.p2' must have class/struct/union type
+z:\ddengine\object.cpp(321) : error C2228: left of '.p3' must have class/struct/union type
+z:\ddengine\object.cpp(323) : error C2664: 'void __thiscall Object::AddTriangle(int,int,int)' : cannot convert parameter 1 from 'class Vertex' to 'int'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+z:\ddengine\object.cpp(324) : error C2664: 'void __thiscall Object::AddTriangle(int,int,int)' : cannot convert parameter 1 from 'class Vertex' to 'int'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+z:\ddengine\object.cpp(325) : error C2664: 'void __thiscall Object::AddTriangle(int,int,int)' : cannot convert parameter 1 from 'class Vertex' to 'int'
+        No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+z:\ddengine\object.cpp(332) : error C2440: 'initializing' : cannot convert from '' to 'class Vertex'
+        No constructor could take the source type, or constructor overload resolution was ambiguous
+z:\ddengine\object.cpp(333) : error C2440: 'initializing' : cannot convert from '' to 'class Vertex'
+        No constructor could take the source type, or constructor overload resolution was ambiguous
+z:\ddengine\object.cpp(347) : error C2374: 'i' : redefinition; multiple initialization
+        z:\ddengine\object.cpp(336) : see declaration of 'i'
+z:\ddengine\object.cpp(359) : error C2374: 'i' : redefinition; multiple initialization
+        z:\ddengine\object.cpp(336) : see declaration of 'i'
+z:\ddengine\object.cpp(360) : error C2679: binary '=' : no operator defined which takes a right-hand operand of type 'class Triangle *' (or there is no acceptable conversion)
+z:\ddengine\object.cpp(361) : error C2039: 'p1' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(362) : error C2039: 'p1' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(365) : error C2039: 'p2' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(366) : error C2039: 'p2' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(369) : error C2039: 'p3' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(370) : error C2039: 'p3' : is not a member of 'Triangle'
+        z:\ddengine\triangle.h(9) : see declaration of 'Triangle'
+z:\ddengine\object.cpp(380) : error C2374: 'i' : redefinition; multiple initialization
+        z:\ddengine\object.cpp(376) : see declaration of 'i'
+Triangle.cpp
+z:\ddengine\vertex.h(22) : error C2143: syntax error : missing ';' before '*'
+z:\ddengine\vertex.h(22) : error C2501: 'Object' : missing storage-class or type specifiers
+z:\ddengine\vertex.h(22) : error C2501: 'parent' : missing storage-class or type specifiers
+z:\ddengine\vertex.h(36) : error C2065: 'Triangle' : undeclared identifier
+z:\ddengine\vertex.h(36) : error C2955: 'vector' : use of class template requires template argument list
+        d:\program files\microsoft visual studio\vc98\include\vector(244) : see declaration of 'vector'
+z:\ddengine\vertex.h(36) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+Vertex.cpp
+z:\ddengine\triangle.h(12) : error C2629: unexpected 'class Triangle ('
+z:\ddengine\triangle.h(12) : error C2238: unexpected token(s) preceding ';'
+z:\ddengine\triangle.h(18) : error C2146: syntax error : missing ';' before identifier 'GetMedium'
+z:\ddengine\triangle.h(18) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(25) : error C2143: syntax error : missing ';' before '*'
+z:\ddengine\triangle.h(25) : error C2501: 'Object' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(25) : error C2501: 'parent' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(28) : error C2146: syntax error : missing ';' before identifier 'p1'
+z:\ddengine\triangle.h(28) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(28) : error C2501: 'p1' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(29) : error C2146: syntax error : missing ';' before identifier 'p2'
+z:\ddengine\triangle.h(29) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(29) : error C2501: 'p2' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(30) : error C2146: syntax error : missing ';' before identifier 'p3'
+z:\ddengine\triangle.h(30) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\triangle.h(30) : error C2501: 'p3' : missing storage-class or type specifiers
+z:\ddengine\edge.h(11) : error C2629: unexpected 'class Edge ('
+z:\ddengine\edge.h(11) : error C2238: unexpected token(s) preceding ';'
+z:\ddengine\edge.h(13) : error C2146: syntax error : missing ';' before identifier 'a'
+z:\ddengine\edge.h(13) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\edge.h(13) : error C2501: 'a' : missing storage-class or type specifiers
+z:\ddengine\edge.h(13) : error C2501: 'b' : missing storage-class or type specifiers
+z:\ddengine\edge.h(14) : error C2146: syntax error : missing ';' before identifier 'start'
+z:\ddengine\edge.h(14) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\edge.h(15) : error C2146: syntax error : missing ';' before identifier 'end'
+z:\ddengine\edge.h(15) : error C2501: 'Vertex' : missing storage-class or type specifiers
+z:\ddengine\object.h(27) : error C2065: 'Vertex' : undeclared identifier
+z:\ddengine\object.h(27) : error C2059: syntax error : '>'
+z:\ddengine\object.h(51) : error C2065: 'b' : undeclared identifier
+z:\ddengine\object.h(51) : error C2065: 'c' : undeclared identifier
+z:\ddengine\object.h(51) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\object.h(66) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\camera.h(13) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\camera.h(47) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\camera.h(49) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\camera.h(51) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\camera.h(53) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\camera.h(55) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\camera.h(57) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\camera.h(59) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\camera.h(61) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\camera.h(63) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\camera.h(65) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\camera.h(67) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\camera.h(69) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\camera.h(73) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.h(13) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.h(29) : error C2065: 'y' : undeclared identifier
+z:\ddengine\vertex.h(29) : error C2065: 'z' : undeclared identifier
+z:\ddengine\vertex.h(29) : error C2143: syntax error : missing ',' before ';'
+z:\ddengine\vertex.h(30) : error C2065: 'v' : undeclared identifier
+z:\ddengine\vertex.h(31) : error C2065: 'ny' : undeclared identifier
+z:\ddengine\vertex.h(31) : error C2065: 'tx' : undeclared identifier
+z:\ddengine\vertex.h(31) : error C2065: 'ty' : undeclared identifier
+z:\ddengine\vertex.h(31) : error C2143: syntax error : missing ',' before ';'
+z:\ddengine\vertex.h(39) : error C2065: 'Camera' : undeclared identifier
+z:\ddengine\vertex.h(49) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(3) : error C2027: use of undefined type 'Vertex'
+        z:\ddengine\vertex.h(13) : see declaration of 'Vertex'
+z:\ddengine\vertex.cpp(3) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(4) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\vertex.cpp(5) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(7) : error C2027: use of undefined type 'Vertex'
+        z:\ddengine\vertex.h(13) : see declaration of 'Vertex'
+z:\ddengine\vertex.cpp(7) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(8) : error C2065: 'ypos' : undeclared identifier
+z:\ddengine\vertex.cpp(8) : error C2065: 'zpos' : undeclared identifier
+z:\ddengine\vertex.cpp(8) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\vertex.cpp(9) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(11) : error C2027: use of undefined type 'Vertex'
+        z:\ddengine\vertex.h(13) : see declaration of 'Vertex'
+z:\ddengine\vertex.cpp(11) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(12) : error C2143: syntax error : missing ',' before ')'
+z:\ddengine\vertex.cpp(15) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(17) : error C2027: use of undefined type 'Vertex'
+        z:\ddengine\vertex.h(13) : see declaration of 'Vertex'
+z:\ddengine\vertex.cpp(17) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(19) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(21) : error C2027: use of undefined type 'Vertex'
+        z:\ddengine\vertex.h(13) : see declaration of 'Vertex'
+z:\ddengine\vertex.cpp(21) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(25) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(27) : error C2027: use of undefined type 'Vertex'
+        z:\ddengine\vertex.h(13) : see declaration of 'Vertex'
+z:\ddengine\vertex.cpp(27) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(28) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(30) : error C2027: use of undefined type 'Vertex'
+        z:\ddengine\vertex.h(13) : see declaration of 'Vertex'
+z:\ddengine\vertex.cpp(30) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(41) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(43) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(45) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(47) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(51) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(53) : error C2027: use of undefined type 'Vertex'
+        z:\ddengine\vertex.h(13) : see declaration of 'Vertex'
+z:\ddengine\vertex.cpp(53) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(56) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(58) : error C2027: use of undefined type 'Vertex'
+        z:\ddengine\vertex.h(13) : see declaration of 'Vertex'
+z:\ddengine\vertex.cpp(58) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(66) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(68) : error C2027: use of undefined type 'Vertex'
+        z:\ddengine\vertex.h(13) : see declaration of 'Vertex'
+z:\ddengine\vertex.cpp(68) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(69) : error C2143: syntax error : missing ')' before ';'
+z:\ddengine\vertex.cpp(69) : error C2059: syntax error : ')'
+z:\ddengine\vertex.cpp(69) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(70) : error C2143: syntax error : missing ';' before '{'
+z:\ddengine\vertex.cpp(72) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(73) : error C2143: syntax error : missing ';' before '}'
+z:\ddengine\vertex.cpp(73) : fatal error C1003: error count exceeds 100; stopping compilation
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+ddengine.exe - 273 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

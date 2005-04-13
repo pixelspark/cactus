@@ -1,0 +1,153 @@
+BODY {
+			font-family:Verdana,Arial;
+			font-size:10px;
+			color:#000000;
+			background-color:#FFFFFF;
+		}
+		
+		SPAN.Header {
+			font-family:Trebuchet MS, Arial Black;
+			font-size:25px;
+			color:#009900;
+			font-weight:bold;
+		}
+		
+		HR {
+			color: #CC0000;
+			height:1px;
+		}
+		
+		DIV.Thick {
+			background-color:#009900;
+			width:800px;
+			height:5px;
+			font-size:1px;
+		}
+		
+		DIV.Thin {
+			background-color:#EFEFEF;
+			width:100%;
+			height:1px;
+			font-size:1px;
+			margin-top:3px;
+			margin-bottom:3px;
+		}
+		
+		TD.Nav {
+			font-family:Arial;
+			background-color:#DFDFDF;
+			border-top:solid 1px #EFEFEF;
+			border-bottom:solid 1px #EFEFEF;
+			width:160px;
+			height:200px;
+			font-size:12px;
+			padding-left:10px;
+			padding-top:10px;
+			padding-right:10px;
+			padding-bottom:10px;
+			vertical-align:top;
+			
+		}
+		
+		TD.Content {
+			font-family:Verdana, Arial;
+			background-color:#FFFFFF;
+			width:640px;
+			height:200px;
+			font-size:12px;
+			padding-left:10px;
+			padding-top:10px;
+			padding-right:10px;
+			padding-bottom:10px;
+			vertical-align:top;
+		}
+		
+		A.Button {
+			background-color:#EFEFEF;
+			width:150px;
+			height:20px;
+			border:solid 1px #CCCCCC;
+			color:#A0A0A0;
+			text-decoration:none;
+			font-family:Verdana;
+			text-align:right;
+			padding-right:10px;
+			margin-top:2px;
+			
+		}
+		
+		A.Button:Hover {
+			background-color:#009900;
+			width:150px;
+			height:20px;
+			border:solid 1px #001100;
+			color:#EFEFEF;
+			text-decoration:none;
+			text-align:right;
+			padding-right:10px;
+		}
+		
+		A.ActiveButton {
+			font-family:Verdana;
+			background-color:#009900;
+			width:150px;
+			height:20px;
+			border:solid 1px #0000CC;
+			color:#EFEFEF;
+			text-decoration:none;
+			text-align:right;
+			padding-right:10px;
+		}
+		
+		TD {
+			font-size:12px;
+		}
+		
+		INPUT {
+			font-family:Verdana;
+			font-size:12px;
+		}
+		
+		SELECT {
+			font-family:Verdana;
+			font-size:12px;
+		}
+		
+		SELECT.Language {
+			width:150px;
+		}
+		
+		FORM.NoMargin {
+			margin:0px;
+			padding:0px;
+		}
+		
+		TD.TableLine {
+			font-size:1px;
+			background-color:#0099CC;
+		}
+		
+		TH {
+			font-size:10px;
+			background-color: #EFEFEF;
+			border-bottom:solid 2px #0099CC;
+		}
+
+		H1 {
+			font-family:Trebuchet MS,Verdana,Arial,System;
+			font-size:20px;
+			color:#0099CC;
+		}
+
+		H2 {
+			font-family:Trebuchet MS,Verdana,Arial,System;
+			font-size:18px;
+			color:#0033AA;
+		}
+
+		H2 {
+			font-family:Trebuchet MS,Verdana,Arial,System;
+			font-size:18px;
+			color:#001199;
+		}
+

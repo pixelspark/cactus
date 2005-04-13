@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title>Cactus Documentation - Changelog</title>
+		<style>
+			BODY {
+				font-family:Verdana, Arial, System;
+				font-size:10px;
+			}
+			HR {
+				color:#CCCCCC;
+				height:1px;
+			}
+	</style>
+	</head>
+	
+	<body>
+		<b>Changelog</b>
+		<hr/>
+		<b>Version 1.0.0</b>
+		<blockquote>Initial Release.</blockquote>
+		
+		<b>Version 1.1.0</b>
+		<blockquote>
+			<li>Fixed a bug in CMatrix::RotateMatrix that made rotation look very odd</li>
+			<li>Fixed bug in CVertex::Project</li>
+			<li>Made transparency (CColor::Transparency) work</li>
+		</blockquote>
+		<hr/>
+
+		<b>Version 1.5.0</b>
+		<blockquote>
+			<li>Fixed texturing bug (_u and _v weren't projected correctly)</li>
+			<li>Added lighting support (not fully functional though, phongshading looks weird when zooming in)</li>
+			<li>Added some asserts to the CMaterial getters and setters</li>
+			<li>Made some CMaterial members protected instead of public</li>
+			<li>Project settings, directory structure and configuration has been streamlined</li>
+			<li>Made Paul Nettle's Memory Manager work with a special debug version of the project</li>
+			<li>Rewritten CTriangle to hold CVertex* instead of CVertex to enable lighting (vertices now stored in CObject)</li>
+			<li>Fixed bugs in CColor methods Add and Scale</li>
+			<li>CObjectFactory rewritten to work with the new way of storing vertices (as explained above)</li>
+			<li>Disabled -QIfist (CTextureFactory generated ugly results because of this rounding mode)</li>
+			<li>Cleaned up cactus.h, removed some comments that were useless</li>
+			<li>Fixed bug in CLinkedList: Empty didn't do anything</li>
+			
+		</blockquote>
+	
+		<hr/>
+
+		<b>Version 1.6.0</b>
+		<blockquote>
+			<li>Memory Manager introduced (thanks to Paul Nettle) but not working very good</li>
+			<li><b>Phongshading fixed, works as expected now</b></li>
+			<li>Fixed some bugs in CObject; normalmatrix was scaled too in CObject::Scale</li>
+		</blockquote>
+
+
+		<b>Version 1.6.5</b>
+		<blockquote>
+			<li>Memory Manager was disabled again; GlowCode did not find any leaks</li>
+			<li>Performance improvements for CBuffer::Clear and CCanvas::Clear</li>
+			<li>Performance improvements for CCOlor routines Add, Multiply and Scale (using int-colors now)</li>
+			<li>Performance improvements for the CRasterizer</li>
+			<li>Disabled Transparency temporarily, bugging</li>
+			<li>Fixed bug in CObjectFactory, Tubes, Spirals and Torus Knots now work</li>
+			<li>Fixed several memory leaking CTextureFactory routines using CColor::MakeGradient</li>
+		</blockquote>
+
+		<b>Version 1.6.6</b>
+		<blockquote>
+			<li>Removed zbuffer negative flip for performance reasons</li>
+			<li>CMatrix::Transform is now inlined</li>
+			<li>Fixed INT_GETALPHA macro</li>
+			<li>Started developing ActiveX-control</li>
+		</blockquote>
+
+		<b>Version 1.7.0</b>
+		<blockquote>
+			<li>Fixed backface culling: invisible triangles were still drawn</li>
+			<li>Added FPU-tweak methods (fputweak.h) for better performance</li>
+			<li>Added function to write performance data to file (win32demo)</li>
+			<li>Cleaned up internal structure; class definitions are now in separate files</li>
+			<li>Inline-methods are now in one file (Inlines.h)</li>
+			<li>Version number now only resides in cactus.h</li>
+		</blockquote>
+                
+                <b>Version 1.8.0</b>
+                <blockquote>
+                        <li>Made cactus work with Visual Studio .NET 2003, older versions may be dropped in future versions</li>
+                        <li>Fixed bug with Z-buffer not being filled correctly</li>
+                </blockquote>
+                
+                <b>Version 1.9.0</b>
+                <blockquote>
+                        <li>Added CSDLViewer in Sandstorm library for fast viewing</li>
+                        <li>Cleaned up whole Sandstorm source code</li>
+                        <li>Added support for identification-buffer</li>
+                        <li>Added extra material mode for showing vertices as dots</li>
+                        <li>Experimental anti-aliasing in CGDIViewer</li>
+                        <li>Lots of small bug fixes and features</li>
+                </blockquote>
+
+		<a href="index.html" style="font-size:9px;">Index</a>
+	</body>
+</html>
