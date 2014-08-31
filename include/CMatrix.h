@@ -25,8 +25,8 @@ class CACTUS_API CMatrix {
 		CMatrix();
 		CMatrix(CVector right, CVector up, CVector forward);
 		void Reset();
-		void Transform(CMatrix& m);
-		void Transform(CMatrix* m);
+		void Transform(const CMatrix& m);
+		void Transform(const CMatrix* m);
 		CMatrix Clone();
 		void Clone(CMatrix& m);
 		CMatrix Inverse();

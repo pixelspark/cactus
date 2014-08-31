@@ -122,7 +122,7 @@ class CACTUS_API CCanvas {
 			// rendering has ended, our final image in _buffer can be drawn to screen
 		}
 
-		void DrawTexel(int x, int y, CColor& c) {
+		void DrawTexel(int x, int y, const CColor& c) {
 			int col = c.ToInt();
 			_buffer[y*_width+x] = col;
 		}

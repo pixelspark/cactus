@@ -175,7 +175,7 @@ CObject* CObjectFactory::Tube(CVector* path, int segments, float r, int steps, b
 		float relx,rely;
 		int a,b,c,d;
 		
-		for (i=0;i<segments;i++) {
+		for (int i=0; i<segments; i++) {
 			// Calculate frenet frame matrix
 			if (i!=segments-1) {
 				forward = CVector::Subtract(path[i+1],path[i]);
@@ -209,7 +209,7 @@ CObject* CObjectFactory::Tube(CVector* path, int segments, float r, int steps, b
 			}
 		}
 		
-		for (i=0;i<segments-1;i++) {
+		for (int i=0;i<segments-1;i++) {
 			for (int k=0; k<steps-1; k++) {
 				a=i*steps+k;
 				b=a+1;
@@ -296,7 +296,7 @@ CObject* CObjectFactory::HeightField(float* data,int xmax,int ymax, float height
 		}
 	}
 
-	for (i=0; i<(xmax-1); i++) {
+	for (int i=0; i<(xmax-1); i++) {
 		for (int j=0; j<(ymax-1); j++) {
 			q1=j+xmax*i;
 			q2=j+1+xmax*i;

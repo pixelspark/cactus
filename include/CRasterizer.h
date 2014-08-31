@@ -29,8 +29,8 @@ class CACTUS_API CRasterizer {
 		void RebuildReferences();
 		void LoadMaterial(CMaterial* material);
 		void LoadLightmap(CLightmap* lightmap);
-		void DrawLine(CVertex* a, CVertex* b, CColor& c);
-		void DrawLine(int, int, int, int, int, int, CColor& c);
+		void DrawLine(CVertex* a, CVertex* b, const CColor& c);
+		void DrawLine(int, int, int, int, int, int, const CColor& c);
 
 		// renderers
 		inline void RenderLine();
@@ -46,7 +46,7 @@ class CACTUS_API CRasterizer {
 
 
 		void DrawWireframe(CTriangle* tri);
-		inline void Render(CTriangle* tri);
+		void Render(CTriangle* tri);
 		void SetCanvas(CCanvas* cv) {
 			_canvas = cv;
 		}

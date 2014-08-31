@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65A8BE8019B319390073BA02 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BE7F19B319390073BA02 /* main.cpp */; };
+		65A8BF1F19B323800073BA02 /* cactus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0619B323800073BA02 /* cactus.cpp */; };
+		65A8BF2019B323800073BA02 /* CCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0719B323800073BA02 /* CCamera.cpp */; };
+		65A8BF2119B323800073BA02 /* CColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0819B323800073BA02 /* CColor.cpp */; };
+		65A8BF2219B323800073BA02 /* CLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0919B323800073BA02 /* CLight.cpp */; };
+		65A8BF2319B323800073BA02 /* CLightmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0A19B323800073BA02 /* CLightmap.cpp */; };
+		65A8BF2419B323800073BA02 /* CLWOImporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0B19B323800073BA02 /* CLWOImporter.cpp */; };
+		65A8BF2519B323800073BA02 /* CMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0C19B323800073BA02 /* CMaterial.cpp */; };
+		65A8BF2619B323800073BA02 /* CMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0D19B323800073BA02 /* CMatrix.cpp */; };
+		65A8BF2719B323800073BA02 /* CObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0E19B323800073BA02 /* CObject.cpp */; };
+		65A8BF2819B323800073BA02 /* CObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0F19B323800073BA02 /* CObjectFactory.cpp */; };
+		65A8BF2919B323800073BA02 /* CPostBlur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1019B323800073BA02 /* CPostBlur.cpp */; };
+		65A8BF2A19B323800073BA02 /* CPostGrayscale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1119B323800073BA02 /* CPostGrayscale.cpp */; };
+		65A8BF2B19B323800073BA02 /* CPostNegator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1219B323800073BA02 /* CPostNegator.cpp */; };
+		65A8BF2C19B323800073BA02 /* CPostReplaceColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1319B323800073BA02 /* CPostReplaceColor.cpp */; };
+		65A8BF2D19B323800073BA02 /* CPreSubtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1419B323800073BA02 /* CPreSubtract.cpp */; };
+		65A8BF2E19B323800073BA02 /* CRasterizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1519B323800073BA02 /* CRasterizer.cpp */; };
+		65A8BF2F19B323800073BA02 /* CRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1619B323800073BA02 /* CRenderer.cpp */; };
+		65A8BF3019B323800073BA02 /* CScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1719B323800073BA02 /* CScene.cpp */; };
+		65A8BF3119B323800073BA02 /* CSpline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1819B323800073BA02 /* CSpline.cpp */; };
+		65A8BF3219B323800073BA02 /* CTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1919B323800073BA02 /* CTexture.cpp */; };
+		65A8BF3319B323800073BA02 /* CTextureFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1A19B323800073BA02 /* CTextureFactory.cpp */; };
+		65A8BF3419B323800073BA02 /* CTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1B19B323800073BA02 /* CTriangle.cpp */; };
+		65A8BF3519B323800073BA02 /* CVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1C19B323800073BA02 /* CVector.cpp */; };
+		65A8BF3619B323800073BA02 /* CVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1D19B323800073BA02 /* CVertex.cpp */; };
+		65A8BF3719B323800073BA02 /* smart_pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1E19B323800073BA02 /* smart_pointer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65A8BE7A19B319390073BA02 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		65A8BE7C19B319390073BA02 /* cactus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cactus; sourceTree = BUILT_PRODUCTS_DIR; };
+		65A8BE7F19B319390073BA02 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		65A8BEE019B323800073BA02 /* cactus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cactus.h; sourceTree = "<group>"; };
+		65A8BEE119B323800073BA02 /* CBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBuffer.h; sourceTree = "<group>"; };
+		65A8BEE219B323800073BA02 /* CCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCamera.h; sourceTree = "<group>"; };
+		65A8BEE319B323800073BA02 /* CCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCanvas.h; sourceTree = "<group>"; };
+		65A8BEE419B323800073BA02 /* CColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CColor.h; sourceTree = "<group>"; };
+		65A8BEE519B323800073BA02 /* CEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEdge.h; sourceTree = "<group>"; };
+		65A8BEE619B323800073BA02 /* CLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLight.h; sourceTree = "<group>"; };
+		65A8BEE719B323800073BA02 /* CLightmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLightmap.h; sourceTree = "<group>"; };
+		65A8BEE819B323800073BA02 /* CLWOImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLWOImporter.h; sourceTree = "<group>"; };
+		65A8BEE919B323800073BA02 /* CMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMaterial.h; sourceTree = "<group>"; };
+		65A8BEEA19B323800073BA02 /* CMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMath.h; sourceTree = "<group>"; };
+		65A8BEEB19B323800073BA02 /* CMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMatrix.h; sourceTree = "<group>"; };
+		65A8BEEC19B323800073BA02 /* CObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CObject.h; sourceTree = "<group>"; };
+		65A8BEED19B323800073BA02 /* CObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CObjectFactory.h; sourceTree = "<group>"; };
+		65A8BEEE19B323800073BA02 /* ColorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMacros.h; sourceTree = "<group>"; };
+		65A8BEEF19B323800073BA02 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		65A8BEF019B323800073BA02 /* CPostBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPostBlur.h; sourceTree = "<group>"; };
+		65A8BEF119B323800073BA02 /* CPostEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPostEffect.h; sourceTree = "<group>"; };
+		65A8BEF219B323800073BA02 /* CPostGrayscale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPostGrayscale.h; sourceTree = "<group>"; };
+		65A8BEF319B323800073BA02 /* CPostNegator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPostNegator.h; sourceTree = "<group>"; };
+		65A8BEF419B323800073BA02 /* CPostReplaceColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPostReplaceColor.h; sourceTree = "<group>"; };
+		65A8BEF519B323800073BA02 /* CPreSubtract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPreSubtract.h; sourceTree = "<group>"; };
+		65A8BEF619B323800073BA02 /* CRasterizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRasterizer.h; sourceTree = "<group>"; };
+		65A8BEF719B323800073BA02 /* CRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRenderer.h; sourceTree = "<group>"; };
+		65A8BEF819B323800073BA02 /* CScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CScene.h; sourceTree = "<group>"; };
+		65A8BEF919B323800073BA02 /* CSpline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSpline.h; sourceTree = "<group>"; };
+		65A8BEFA19B323800073BA02 /* CTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTexture.h; sourceTree = "<group>"; };
+		65A8BEFB19B323800073BA02 /* CTextureFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTextureFactory.h; sourceTree = "<group>"; };
+		65A8BEFC19B323800073BA02 /* CTextureProjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTextureProjector.h; sourceTree = "<group>"; };
+		65A8BEFD19B323800073BA02 /* CTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTriangle.h; sourceTree = "<group>"; };
+		65A8BEFE19B323800073BA02 /* CVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVector.h; sourceTree = "<group>"; };
+		65A8BEFF19B323800073BA02 /* CVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVertex.h; sourceTree = "<group>"; };
+		65A8BF0019B323800073BA02 /* Inlines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inlines.h; sourceTree = "<group>"; };
+		65A8BF0119B323800073BA02 /* linked_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linked_list.h; sourceTree = "<group>"; };
+		65A8BF0219B323800073BA02 /* OptimizedMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptimizedMath.h; sourceTree = "<group>"; };
+		65A8BF0319B323800073BA02 /* smart_pointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smart_pointer.h; sourceTree = "<group>"; };
+		65A8BF0419B323800073BA02 /* tweakfpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tweakfpu.h; sourceTree = "<group>"; };
+		65A8BF0619B323800073BA02 /* cactus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cactus.cpp; sourceTree = "<group>"; };
+		65A8BF0719B323800073BA02 /* CCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCamera.cpp; sourceTree = "<group>"; };
+		65A8BF0819B323800073BA02 /* CColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CColor.cpp; sourceTree = "<group>"; };
+		65A8BF0919B323800073BA02 /* CLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLight.cpp; sourceTree = "<group>"; };
+		65A8BF0A19B323800073BA02 /* CLightmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLightmap.cpp; sourceTree = "<group>"; };
+		65A8BF0B19B323800073BA02 /* CLWOImporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CLWOImporter.cpp; sourceTree = "<group>"; };
+		65A8BF0C19B323800073BA02 /* CMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMaterial.cpp; sourceTree = "<group>"; };
+		65A8BF0D19B323800073BA02 /* CMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMatrix.cpp; sourceTree = "<group>"; };
+		65A8BF0E19B323800073BA02 /* CObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CObject.cpp; sourceTree = "<group>"; };
+		65A8BF0F19B323800073BA02 /* CObjectFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CObjectFactory.cpp; sourceTree = "<group>"; };
+		65A8BF1019B323800073BA02 /* CPostBlur.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPostBlur.cpp; sourceTree = "<group>"; };
+		65A8BF1119B323800073BA02 /* CPostGrayscale.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPostGrayscale.cpp; sourceTree = "<group>"; };
+		65A8BF1219B323800073BA02 /* CPostNegator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPostNegator.cpp; sourceTree = "<group>"; };
+		65A8BF1319B323800073BA02 /* CPostReplaceColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPostReplaceColor.cpp; sourceTree = "<group>"; };
+		65A8BF1419B323800073BA02 /* CPreSubtract.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPreSubtract.cpp; sourceTree = "<group>"; };
+		65A8BF1519B323800073BA02 /* CRasterizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRasterizer.cpp; sourceTree = "<group>"; };
+		65A8BF1619B323800073BA02 /* CRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRenderer.cpp; sourceTree = "<group>"; };
+		65A8BF1719B323800073BA02 /* CScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CScene.cpp; sourceTree = "<group>"; };
+		65A8BF1819B323800073BA02 /* CSpline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSpline.cpp; sourceTree = "<group>"; };
+		65A8BF1919B323800073BA02 /* CTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTexture.cpp; sourceTree = "<group>"; };
+		65A8BF1A19B323800073BA02 /* CTextureFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTextureFactory.cpp; sourceTree = "<group>"; };
+		65A8BF1B19B323800073BA02 /* CTriangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTriangle.cpp; sourceTree = "<group>"; };
+		65A8BF1C19B323800073BA02 /* CVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVector.cpp; sourceTree = "<group>"; };
+		65A8BF1D19B323800073BA02 /* CVertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVertex.cpp; sourceTree = "<group>"; };
+		65A8BF1E19B323800073BA02 /* smart_pointer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = smart_pointer.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65A8BE7919B319390073BA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65A8BE7319B319390073BA02 = {
+			isa = PBXGroup;
+			children = (
+				65A8BE7E19B319390073BA02 /* cactus */,
+				65A8BE7D19B319390073BA02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65A8BE7D19B319390073BA02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65A8BE7C19B319390073BA02 /* cactus */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65A8BE7E19B319390073BA02 /* cactus */ = {
+			isa = PBXGroup;
+			children = (
+				65A8BEDF19B323800073BA02 /* include */,
+				65A8BF0519B323800073BA02 /* src */,
+				65A8BE7F19B319390073BA02 /* main.cpp */,
+			);
+			path = cactus;
+			sourceTree = "<group>";
+		};
+		65A8BEDF19B323800073BA02 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				65A8BEE019B323800073BA02 /* cactus.h */,
+				65A8BEE119B323800073BA02 /* CBuffer.h */,
+				65A8BEE219B323800073BA02 /* CCamera.h */,
+				65A8BEE319B323800073BA02 /* CCanvas.h */,
+				65A8BEE419B323800073BA02 /* CColor.h */,
+				65A8BEE519B323800073BA02 /* CEdge.h */,
+				65A8BEE619B323800073BA02 /* CLight.h */,
+				65A8BEE719B323800073BA02 /* CLightmap.h */,
+				65A8BEE819B323800073BA02 /* CLWOImporter.h */,
+				65A8BEE919B323800073BA02 /* CMaterial.h */,
+				65A8BEEA19B323800073BA02 /* CMath.h */,
+				65A8BEEB19B323800073BA02 /* CMatrix.h */,
+				65A8BEEC19B323800073BA02 /* CObject.h */,
+				65A8BEED19B323800073BA02 /* CObjectFactory.h */,
+				65A8BEEE19B323800073BA02 /* ColorMacros.h */,
+				65A8BEEF19B323800073BA02 /* Constants.h */,
+				65A8BEF019B323800073BA02 /* CPostBlur.h */,
+				65A8BEF119B323800073BA02 /* CPostEffect.h */,
+				65A8BEF219B323800073BA02 /* CPostGrayscale.h */,
+				65A8BEF319B323800073BA02 /* CPostNegator.h */,
+				65A8BEF419B323800073BA02 /* CPostReplaceColor.h */,
+				65A8BEF519B323800073BA02 /* CPreSubtract.h */,
+				65A8BEF619B323800073BA02 /* CRasterizer.h */,
+				65A8BEF719B323800073BA02 /* CRenderer.h */,
+				65A8BEF819B323800073BA02 /* CScene.h */,
+				65A8BEF919B323800073BA02 /* CSpline.h */,
+				65A8BEFA19B323800073BA02 /* CTexture.h */,
+				65A8BEFB19B323800073BA02 /* CTextureFactory.h */,
+				65A8BEFC19B323800073BA02 /* CTextureProjector.h */,
+				65A8BEFD19B323800073BA02 /* CTriangle.h */,
+				65A8BEFE19B323800073BA02 /* CVector.h */,
+				65A8BEFF19B323800073BA02 /* CVertex.h */,
+				65A8BF0019B323800073BA02 /* Inlines.h */,
+				65A8BF0119B323800073BA02 /* linked_list.h */,
+				65A8BF0219B323800073BA02 /* OptimizedMath.h */,
+				65A8BF0319B323800073BA02 /* smart_pointer.h */,
+				65A8BF0419B323800073BA02 /* tweakfpu.h */,
+			);
+			name = include;
+			path = ../../../include;
+			sourceTree = "<group>";
+		};
+		65A8BF0519B323800073BA02 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				65A8BF0619B323800073BA02 /* cactus.cpp */,
+				65A8BF0719B323800073BA02 /* CCamera.cpp */,
+				65A8BF0819B323800073BA02 /* CColor.cpp */,
+				65A8BF0919B323800073BA02 /* CLight.cpp */,
+				65A8BF0A19B323800073BA02 /* CLightmap.cpp */,
+				65A8BF0B19B323800073BA02 /* CLWOImporter.cpp */,
+				65A8BF0C19B323800073BA02 /* CMaterial.cpp */,
+				65A8BF0D19B323800073BA02 /* CMatrix.cpp */,
+				65A8BF0E19B323800073BA02 /* CObject.cpp */,
+				65A8BF0F19B323800073BA02 /* CObjectFactory.cpp */,
+				65A8BF1019B323800073BA02 /* CPostBlur.cpp */,
+				65A8BF1119B323800073BA02 /* CPostGrayscale.cpp */,
+				65A8BF1219B323800073BA02 /* CPostNegator.cpp */,
+				65A8BF1319B323800073BA02 /* CPostReplaceColor.cpp */,
+				65A8BF1419B323800073BA02 /* CPreSubtract.cpp */,
+				65A8BF1519B323800073BA02 /* CRasterizer.cpp */,
+				65A8BF1619B323800073BA02 /* CRenderer.cpp */,
+				65A8BF1719B323800073BA02 /* CScene.cpp */,
+				65A8BF1819B323800073BA02 /* CSpline.cpp */,
+				65A8BF1919B323800073BA02 /* CTexture.cpp */,
+				65A8BF1A19B323800073BA02 /* CTextureFactory.cpp */,
+				65A8BF1B19B323800073BA02 /* CTriangle.cpp */,
+				65A8BF1C19B323800073BA02 /* CVector.cpp */,
+				65A8BF1D19B323800073BA02 /* CVertex.cpp */,
+				65A8BF1E19B323800073BA02 /* smart_pointer.cpp */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65A8BE7B19B319390073BA02 /* cactus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65A8BE8319B319390073BA02 /* Build configuration list for PBXNativeTarget "cactus" */;
+			buildPhases = (
+				65A8BE7819B319390073BA02 /* Sources */,
+				65A8BE7919B319390073BA02 /* Frameworks */,
+				65A8BE7A19B319390073BA02 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cactus;
+			productName = cactus;
+			productReference = 65A8BE7C19B319390073BA02 /* cactus */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65A8BE7419B319390073BA02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Pixelspark;
+				TargetAttributes = {
+					65A8BE7B19B319390073BA02 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 65A8BE7719B319390073BA02 /* Build configuration list for PBXProject "cactus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65A8BE7319B319390073BA02;
+			productRefGroup = 65A8BE7D19B319390073BA02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65A8BE7B19B319390073BA02 /* cactus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65A8BE7819B319390073BA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65A8BF2F19B323800073BA02 /* CRenderer.cpp in Sources */,
+				65A8BF2519B323800073BA02 /* CMaterial.cpp in Sources */,
+				65A8BF3619B323800073BA02 /* CVertex.cpp in Sources */,
+				65A8BF3119B323800073BA02 /* CSpline.cpp in Sources */,
+				65A8BF2E19B323800073BA02 /* CRasterizer.cpp in Sources */,
+				65A8BF2619B323800073BA02 /* CMatrix.cpp in Sources */,
+				65A8BF3219B323800073BA02 /* CTexture.cpp in Sources */,
+				65A8BF1F19B323800073BA02 /* cactus.cpp in Sources */,
+				65A8BF2D19B323800073BA02 /* CPreSubtract.cpp in Sources */,
+				65A8BF2C19B323800073BA02 /* CPostReplaceColor.cpp in Sources */,
+				65A8BF2819B323800073BA02 /* CObjectFactory.cpp in Sources */,
+				65A8BF3519B323800073BA02 /* CVector.cpp in Sources */,
+				65A8BF2919B323800073BA02 /* CPostBlur.cpp in Sources */,
+				65A8BF2319B323800073BA02 /* CLightmap.cpp in Sources */,
+				65A8BF2719B323800073BA02 /* CObject.cpp in Sources */,
+				65A8BF2219B323800073BA02 /* CLight.cpp in Sources */,
+				65A8BF2B19B323800073BA02 /* CPostNegator.cpp in Sources */,
+				65A8BF3719B323800073BA02 /* smart_pointer.cpp in Sources */,
+				65A8BF2419B323800073BA02 /* CLWOImporter.cpp in Sources */,
+				65A8BF2119B323800073BA02 /* CColor.cpp in Sources */,
+				65A8BF2A19B323800073BA02 /* CPostGrayscale.cpp in Sources */,
+				65A8BF3319B323800073BA02 /* CTextureFactory.cpp in Sources */,
+				65A8BF3019B323800073BA02 /* CScene.cpp in Sources */,
+				65A8BF2019B323800073BA02 /* CCamera.cpp in Sources */,
+				65A8BE8019B319390073BA02 /* main.cpp in Sources */,
+				65A8BF3419B323800073BA02 /* CTriangle.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		65A8BE8119B319390073BA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		65A8BE8219B319390073BA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		65A8BE8419B319390073BA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		65A8BE8519B319390073BA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65A8BE7719B319390073BA02 /* Build configuration list for PBXProject "cactus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A8BE8119B319390073BA02 /* Debug */,
+				65A8BE8219B319390073BA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65A8BE8319B319390073BA02 /* Build configuration list for PBXNativeTarget "cactus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A8BE8419B319390073BA02 /* Debug */,
+				65A8BE8519B319390073BA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65A8BE7419B319390073BA02 /* Project object */;
+}

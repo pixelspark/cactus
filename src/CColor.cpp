@@ -44,22 +44,13 @@ CColor::CColor(int c) {
 // Constructs the color object with the specified colors.
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 CColor::CColor(unsigned char red,unsigned char green, unsigned char blue) {
-	assert(red<256&&red>-1);
-	assert(green<256&&green>-1);
-	assert(blue<256&&blue>-1);
-
 	_red = red;
 	_green = green;
 	_blue = blue;
-	_alpha = 0;
+	_alpha = 127;
 }
 
 CColor::CColor(unsigned char red,unsigned char green,unsigned char blue, unsigned char alpha) {
-	assert(red<256&&red>-1);
-	assert(green<256&&green>-1);
-	assert(blue<256&&blue>-1);
-	assert(alpha<256&&alpha>-1);
-
 	_red = red;
 	_green = green;
 	_blue = blue;
@@ -87,18 +78,14 @@ unsigned char CColor::GetAlpha() {
 }
 
 void CColor::SetAlpha(unsigned char alpha) {
-	assert(alpha<256&&alpha>-1);
-
 	_alpha = alpha;
 }
 
 void CColor::SetBlue(unsigned char blue) {
-	assert(blue<256&&blue>-1);
 	_blue = blue;
 }
 
 void CColor::SetGreen(unsigned char green) {
-	assert(green<256&&green>-1);
 	_green = green;
 }
 
@@ -110,7 +97,6 @@ void CColor::MixWith(CColor& col) {
 }
 
 void CColor::SetRed(unsigned char red) {
-	assert(red<256&&red>-1);
 	_red = red;
 }
 

@@ -45,10 +45,15 @@ such that	idx3d_Matrix.rotateSelf becomes CMatrix.RotateSelf.
 // This is a block of code that enables us to use this headerfile both when we compile the library and when we use it in another
 // application. This is very useful though. All functions that need to be exported must be defined with CACTUS_API.
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
-#ifdef CACTUS_EXPORTS
-	#define CACTUS_API __declspec(dllexport)
+
+#ifdef __MACH__
+    #define CACTUS_API
 #else
-	#define CACTUS_API __declspec(dllimport)
+    #ifdef CACTUS_EXPORTS
+        #define CACTUS_API __declspec(dllexport)
+    #else
+        #define CACTUS_API __declspec(dllimport)
+    #endif
 #endif
 
 // system includes

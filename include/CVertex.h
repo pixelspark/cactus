@@ -85,7 +85,7 @@ class CACTUS_API CVertex {
 		void SetUV(float u,float v);
 		void ScaleTextureCoordinates(float fx,float fy);
 		void ClipFrustum(int w, int h);
-		CVertex Clone();
+		CVertex Clone() const;
 		void Clone(CVertex& target);
 
 		CVector pos;

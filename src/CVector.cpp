@@ -33,7 +33,7 @@ CVector::CVector() {
 	_z = 0;
 }
 
-CVector::CVector(CVector* other) {
+CVector::CVector(const CVector* other) {
 	_x = other->_x;
 	_y = other->_y;
 	_z = other->_z;
@@ -86,6 +86,6 @@ CVector CVector::Clone() {
 	return CVector(this);
 }
 
-void CVector::Clone(CVector& target) {
+void CVector::Clone(CVector& target) const {
 	target = CVector(this);
 }

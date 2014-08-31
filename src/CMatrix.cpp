@@ -52,7 +52,7 @@ void CMatrix::Reset() {
 		m00 = m11 = m22 = m33 = 1;
 }
 
-void CMatrix::Transform(CMatrix& n) {
+void CMatrix::Transform(const CMatrix& n) {
 	CMatrix m = Clone();
 	m00 = n.m00*m.m00 + n.m01*m.m10 + n.m02*m.m20;
 	m01 = n.m00*m.m01 + n.m01*m.m11 + n.m02*m.m21;
@@ -68,7 +68,7 @@ void CMatrix::Transform(CMatrix& n) {
 	m23 = n.m20*m.m03 + n.m21*m.m13 + n.m22*m.m23 + n.m23;	
 }
 
-void CMatrix::Transform(CMatrix* n) {
+void CMatrix::Transform(const CMatrix* n) {
 	CMatrix mm = Clone();
 	CMatrix* m  = &mm;
 

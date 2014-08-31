@@ -27,7 +27,7 @@ CPostBlur::~CPostBlur(){
 void CPostBlur::ProcessImage (int *buffer, int width, int height) {
 	unsigned char mask_val[9] = {
 		1, 1, 1, 
-		1, 5 * (11 - _amount), 1, 
+		1, static_cast<unsigned char>(5 * (11 - _amount)), 1,
 		1, 1, 1 
 	};
 	
@@ -35,7 +35,7 @@ void CPostBlur::ProcessImage (int *buffer, int width, int height) {
 	int end_x = width - 1, end_y = height - 1;
 	int mask_x, mask_y, mask_count = 0, divisor = 0;
 	int red = 0, green = 0, blue = 0;
-	int	index;
+    int	index = 0;
 
 	/// Jure: this still needs some optimization
 	/// Tommy: maybe this could be optimized using MMX/SSE? If you are going to use MMX/SSE, please use the

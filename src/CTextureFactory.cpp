@@ -80,7 +80,7 @@ float CTextureFactory::Perlin2d(float x, float y, float wavelength, float persis
 CTexture CTextureFactory::Perlin(int w, int h, float persistency, float density, int samples, int scale) {
 	InitNoiseBuffer();
 	CTexture t(w,h);
-	int pos=0;
+	//int pos=0;
 	float wavelength=(float)((w>h)?w:h)/density;
 	
 	int* data = new int[w*h];
@@ -101,7 +101,7 @@ CTexture CTextureFactory::Perlin(int w, int h, float persistency, float density,
 CTexture CTextureFactory::Wave(int w, int h, float persistency, float density, int samples, int scale) {
 	InitNoiseBuffer();
 	CTexture t(w,h);
-	int pos = 0;
+	//int pos = 0;
 	float wavelength = (float)((w>h)?w:h)/density;
 	
 	int* data = new int[w*h];

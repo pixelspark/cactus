@@ -31,7 +31,7 @@ class CACTUS_API CLight {
 		CLight(CVector& direction, CColor& color, int highlightSheen, int highlightSpread);
 		CLight(CVector& direction, CColor& diffuse,CColor& specular, int highlightSheen, int highlightSpread);
 		void Project(CMatrix& m);
-		void SetDirection(CVector& direction) {
+		void SetDirection(const CVector& direction) {
 			direction.Clone(v);
 			v.Normalize();
 		}

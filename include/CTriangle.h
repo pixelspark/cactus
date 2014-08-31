@@ -93,7 +93,7 @@ class CACTUS_API CTriangle {
 			return (float)(_a->_z+_b->_z+_c->_z);
 		}
 
-		inline void CTriangle::Project(CMatrix normalProjection) {
+		inline void Project(CMatrix normalProjection) {
 			n2 = n.Transform(normalProjection);
 			dist=GetDistance();
 		}

@@ -28,16 +28,16 @@ class CACTUS_API CVector {
 	public:
 		CVector();
 		CVector(float x, float y, float z);
-		CVector(CVector* other);
+		CVector(const CVector* other);
 
 		float GetLength();
 		void Normalize();
 		void Reverse();
 		void Scale(float f);
 		CVector Clone();
-		void Clone(CVector& target);
-		inline CVector Transform(CMatrix m);
-		inline CVector Transform(CMatrix* m);
+		void Clone(CVector& target) const;
+		CVector Transform(CMatrix m);
+		CVector Transform(CMatrix* m);
 
 		static float Angle(CVector& a, CVector& b) {
 			a.Normalize();
@@ -58,23 +58,23 @@ class CACTUS_API CVector {
 			return CVector(v._x*f,v._y*f,v._z*f);
 		}
 
-		static CVector CVector::GetNormal(CVector a,CVector b) {
+		static CVector GetNormal(CVector a,CVector b) {
 			CVector ret =  VectorProduct(a,b);
 			ret.Normalize();
 			return ret;
 		}
 
-		static CVector CVector::GetNormal(CVector a,CVector b,CVector c) {
+		static CVector GetNormal(CVector a,CVector b,CVector c) {
 			CVector ret = VectorProduct(a,b,c);
 			ret.Normalize();
 			return ret;
 		}
 
-		static CVector CVector::VectorProduct(CVector a,CVector b) {
+		static CVector VectorProduct(CVector a,CVector b) {
 			return CVector(a._y*b._z-b._y*a._z,a._z*b._x-b._z*a._x,a._x*b._y-b._x*a._y);
 		}
 
-		static CVector CVector::VectorProduct(CVector a,CVector b,CVector c) {
+		static CVector VectorProduct(CVector a,CVector b,CVector c) {
 			return VectorProduct(Subtract(b,a),Subtract(c,a));
 		}
 

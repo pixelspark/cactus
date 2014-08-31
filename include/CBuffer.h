@@ -102,7 +102,7 @@ template<class T> class CACTUS_API CBuffer {
 
 		inline void PutIndex(int index, T value) {
 			assert(_array!=0);
-			_array[i] = value;
+			_array[index] = value;
 		}
 
 		inline T GetIndex(int index) {

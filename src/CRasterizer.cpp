@@ -295,7 +295,7 @@ void CRasterizer::DrawWireframe(CTriangle* tri) {
 	DrawLine(tri->_c,tri->_a,CColor(color));
 }
 
-void CRasterizer::DrawLine(int x1, int y1, int z1,int x2, int y2, int z2, CColor &c) {
+void CRasterizer::DrawLine(int x1, int y1, int z1,int x2, int y2, int z2, const CColor &c) {
 	int x3,y3,z3;
 	dx = (int)(abs((int)x1-(int)x2));
 	dy = (int)(abs((int)y1-(int)y2));
@@ -327,7 +327,7 @@ void CRasterizer::DrawLine(int x1, int y1, int z1,int x2, int y2, int z2, CColor
 			y2=y>>16;
 			if (Inrange(x,0,_width-1)&&Inrange(y2,0,_height-1)) {
 				offset=y2*_width;
-				float gz = _zbuffer->Get(x,y2);
+				//float gz = _zbuffer->Get(x,y2);
 
 				_canvas->DrawTexel(x,y2,c);
 					
@@ -373,7 +373,7 @@ void CRasterizer::DrawLine(int x1, int y1, int z1,int x2, int y2, int z2, CColor
 	}
 }
 
-void CRasterizer::DrawLine(CVertex* a, CVertex* b, CColor &c) {
+void CRasterizer::DrawLine(CVertex* a, CVertex* b, const CColor &c) {
 	CVertex* temp;
 	if((a->clipcode&b->clipcode)!=0) {
 		return;

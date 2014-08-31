@@ -27,16 +27,16 @@ class CACTUS_API CColor {
 		CColor(int colcode);
 		CColor(unsigned char red, unsigned char green, unsigned char blue, unsigned char alpha);
 
-		inline unsigned char GetRed();
-		inline unsigned char GetBlue();
-		inline unsigned char GetGreen();
-		inline unsigned char GetAlpha();
+		unsigned char GetRed();
+		unsigned char GetBlue();
+		unsigned char GetGreen();
+		unsigned char GetAlpha();
 		void SetRed(unsigned char red);
 		void SetGreen(unsigned char green);
 		void SetBlue(unsigned char blue);
 		void SetAlpha(unsigned char alpha);
 		void MixWith(CColor& c);
-		inline int ToInt() {
+		inline int ToInt() const {
 			return (_red<<16)|(_green<<8)|_blue;
 		}
 
@@ -194,7 +194,7 @@ class CACTUS_API CColor {
 			return ALPHA|(~overflow&pixel);
 		}
 
-		inline void operator=(CColor &color){
+		inline void operator=(const CColor &color) {
 			_green = color._green;
 			_red = color._red;
 			_blue = color._blue;
@@ -221,7 +221,7 @@ class CACTUS_API CColor {
 		}
 
 		static inline void Transparency(CColor& back, CColor& front, CColor& target) {
-			register int alpha = target._alpha;
+			int alpha = target._alpha;
 			
 			if(alpha==0) {
 				target = front;

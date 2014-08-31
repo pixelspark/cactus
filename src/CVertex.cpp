@@ -134,7 +134,7 @@ void CVertex::Clone(CVertex& target) {
 }
 
 // does this really work?
-CVertex CVertex::Clone() {
+CVertex CVertex::Clone() const {
 	return *this;
 }
 

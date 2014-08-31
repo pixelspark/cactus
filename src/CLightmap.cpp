@@ -76,7 +76,8 @@ void CLightmap::RebuildLightmap() {
 				spread = (spread<0.01f)?0.01f:spread;
 
 				//cos=(int)(255*idx3d_Vector.angle(light[i].v,new idx3d_Vector(fnx,fny,sphere[pos])));
-				cos = (int)(255*CVector::Angle(li->v,CVector(fnx, fny, sphere[pos])));
+                CVector vec = CVector(fnx, fny, sphere[pos]);
+				cos = (int)(255*CVector::Angle(li->v,vec));
 				cos = (cos>0)?cos:0;
 
 				dr += (diffuse._red*cos)>>8; // >>8

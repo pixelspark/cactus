@@ -34,7 +34,7 @@ class CACTUS_API CPostBlur : public CPostEffect {
 
 		void ProcessImage (int *buffer, int width, int height);
 	private:
-		int _amount;
+		unsigned char _amount;
 
 
 };

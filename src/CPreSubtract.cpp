@@ -29,25 +29,9 @@ void CPreSubtract::ProcessImage(int* begin, int width, int height) {
 
 	int* end = begin+(width*height);
 	for(int* index=end;index>begin;index-=1) {
-/*#ifdef USE_OPTIMIZATIONS
-
-		__asm {
-			mov eax, index		// eax points to the current two pixels
-			movq MM1, [eax]	  // move the current two pixels to MM1
-
-			movq MM2, f			// MM2 = 0xFFFFFFFF 0xFFFFFFFF
-			psubusb MM1, MM2	// subtract MM1 from MM2 and place the result in MM2
-			movq [eax] , MM1 // place the two pixels in MM2 back in the buffer
-		}
-	}
-
-	__asm {
-		emms
-	}
-#else*/
-		int r = (INT_GETRED(*index))-20;
-		int g = (INT_GETGREEN(*index))-20;
-		int b = (INT_GETBLUE(*index))-20;
+		int r = (INT_GETRED(*index))-*f;
+		int g = (INT_GETGREEN(*index))-*f;
+		int b = (INT_GETBLUE(*index))-*f;
 
 		if(r<0) { r = 0; }
 		if(g<0) { g = 0; }
@@ -55,5 +39,4 @@ void CPreSubtract::ProcessImage(int* begin, int width, int height) {
 
 		*index = MAKE_COLOR(r,g,b);
 }
-//#endif
 }
