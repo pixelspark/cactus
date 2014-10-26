@@ -7,6 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6565384719FBACB80042D4CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6565384619FBACB80042D4CC /* main.m */; };
+		6565384A19FBACB80042D4CC /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6565384919FBACB80042D4CC /* AppDelegate.mm */; };
+		6565384C19FBACB80042D4CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6565384B19FBACB80042D4CC /* Images.xcassets */; };
+		6565384F19FBACB80042D4CC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6565384D19FBACB80042D4CC /* MainMenu.xib */; };
+		6565385B19FBACB80042D4CC /* CactusDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6565385A19FBACB80042D4CC /* CactusDemoTests.m */; };
+		6565386219FBAD950042D4CC /* cactus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0619B323800073BA02 /* cactus.cpp */; };
+		6565386319FBAD950042D4CC /* CCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0719B323800073BA02 /* CCamera.cpp */; };
+		6565386419FBAD950042D4CC /* CColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0819B323800073BA02 /* CColor.cpp */; };
+		6565386519FBAD950042D4CC /* CLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0919B323800073BA02 /* CLight.cpp */; };
+		6565386619FBAD950042D4CC /* CLightmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0A19B323800073BA02 /* CLightmap.cpp */; };
+		6565386719FBAD950042D4CC /* CLWOImporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0B19B323800073BA02 /* CLWOImporter.cpp */; };
+		6565386819FBAD950042D4CC /* CMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0C19B323800073BA02 /* CMaterial.cpp */; };
+		6565386919FBAD950042D4CC /* CMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0D19B323800073BA02 /* CMatrix.cpp */; };
+		6565386A19FBAD950042D4CC /* CObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0E19B323800073BA02 /* CObject.cpp */; };
+		6565386B19FBAD950042D4CC /* CObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0F19B323800073BA02 /* CObjectFactory.cpp */; };
+		6565386C19FBAD950042D4CC /* CPostBlur.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1019B323800073BA02 /* CPostBlur.cpp */; };
+		6565386D19FBAD950042D4CC /* CPostGrayscale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1119B323800073BA02 /* CPostGrayscale.cpp */; };
+		6565386E19FBAD950042D4CC /* CPostNegator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1219B323800073BA02 /* CPostNegator.cpp */; };
+		6565386F19FBAD950042D4CC /* CPostReplaceColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1319B323800073BA02 /* CPostReplaceColor.cpp */; };
+		6565387019FBAD950042D4CC /* CPreSubtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1419B323800073BA02 /* CPreSubtract.cpp */; };
+		6565387119FBAD950042D4CC /* CRasterizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1519B323800073BA02 /* CRasterizer.cpp */; };
+		6565387219FBAD950042D4CC /* CRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1619B323800073BA02 /* CRenderer.cpp */; };
+		6565387319FBAD950042D4CC /* CScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1719B323800073BA02 /* CScene.cpp */; };
+		6565387419FBAD950042D4CC /* CSpline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1819B323800073BA02 /* CSpline.cpp */; };
+		6565387519FBAD950042D4CC /* CTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1919B323800073BA02 /* CTexture.cpp */; };
+		6565387619FBAD950042D4CC /* CTextureFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1A19B323800073BA02 /* CTextureFactory.cpp */; };
+		6565387719FBAD950042D4CC /* CTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1B19B323800073BA02 /* CTriangle.cpp */; };
+		6565387819FBAD950042D4CC /* CVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1C19B323800073BA02 /* CVector.cpp */; };
+		6565387919FBAD950042D4CC /* CVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1D19B323800073BA02 /* CVertex.cpp */; };
+		6565387A19FBAD950042D4CC /* smart_pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1E19B323800073BA02 /* smart_pointer.cpp */; };
 		65A8BE8019B319390073BA02 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BE7F19B319390073BA02 /* main.cpp */; };
 		65A8BF1F19B323800073BA02 /* cactus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0619B323800073BA02 /* cactus.cpp */; };
 		65A8BF2019B323800073BA02 /* CCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF0719B323800073BA02 /* CCamera.cpp */; };
@@ -35,6 +65,16 @@
 		65A8BF3719B323800073BA02 /* smart_pointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65A8BF1E19B323800073BA02 /* smart_pointer.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6565385519FBACB80042D4CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65A8BE7419B319390073BA02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6565384119FBACB80042D4CC;
+			remoteInfo = CactusDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		65A8BE7A19B319390073BA02 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -48,6 +88,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6565384219FBACB80042D4CC /* CactusDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CactusDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6565384519FBACB80042D4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6565384619FBACB80042D4CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6565384819FBACB80042D4CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6565384919FBACB80042D4CC /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		6565384B19FBACB80042D4CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6565384E19FBACB80042D4CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6565385419FBACB80042D4CC /* CactusDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CactusDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6565385919FBACB80042D4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6565385A19FBACB80042D4CC /* CactusDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CactusDemoTests.m; sourceTree = "<group>"; };
 		65A8BE7C19B319390073BA02 /* cactus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cactus; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A8BE7F19B319390073BA02 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		65A8BEE019B323800073BA02 /* cactus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cactus.h; sourceTree = "<group>"; };
@@ -115,6 +165,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6565383F19FBACB80042D4CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6565385119FBACB80042D4CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65A8BE7919B319390073BA02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,10 +189,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6565384319FBACB80042D4CC /* CactusDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6565384819FBACB80042D4CC /* AppDelegate.h */,
+				6565384919FBACB80042D4CC /* AppDelegate.mm */,
+				6565384B19FBACB80042D4CC /* Images.xcassets */,
+				6565384D19FBACB80042D4CC /* MainMenu.xib */,
+				6565384419FBACB80042D4CC /* Supporting Files */,
+			);
+			path = CactusDemo;
+			sourceTree = "<group>";
+		};
+		6565384419FBACB80042D4CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6565384519FBACB80042D4CC /* Info.plist */,
+				6565384619FBACB80042D4CC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6565385719FBACB80042D4CC /* CactusDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6565385A19FBACB80042D4CC /* CactusDemoTests.m */,
+				6565385819FBACB80042D4CC /* Supporting Files */,
+			);
+			path = CactusDemoTests;
+			sourceTree = "<group>";
+		};
+		6565385819FBACB80042D4CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6565385919FBACB80042D4CC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		65A8BE7319B319390073BA02 = {
 			isa = PBXGroup;
 			children = (
 				65A8BE7E19B319390073BA02 /* cactus */,
+				6565384319FBACB80042D4CC /* CactusDemo */,
+				6565385719FBACB80042D4CC /* CactusDemoTests */,
 				65A8BE7D19B319390073BA02 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,6 +241,8 @@
 			isa = PBXGroup;
 			children = (
 				65A8BE7C19B319390073BA02 /* cactus */,
+				6565384219FBACB80042D4CC /* CactusDemo.app */,
+				6565385419FBACB80042D4CC /* CactusDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,6 +338,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6565384119FBACB80042D4CC /* CactusDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6565386019FBACB80042D4CC /* Build configuration list for PBXNativeTarget "CactusDemo" */;
+			buildPhases = (
+				6565383E19FBACB80042D4CC /* Sources */,
+				6565383F19FBACB80042D4CC /* Frameworks */,
+				6565384019FBACB80042D4CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CactusDemo;
+			productName = CactusDemo;
+			productReference = 6565384219FBACB80042D4CC /* CactusDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6565385319FBACB80042D4CC /* CactusDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6565386119FBACB80042D4CC /* Build configuration list for PBXNativeTarget "CactusDemoTests" */;
+			buildPhases = (
+				6565385019FBACB80042D4CC /* Sources */,
+				6565385119FBACB80042D4CC /* Frameworks */,
+				6565385219FBACB80042D4CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6565385619FBACB80042D4CC /* PBXTargetDependency */,
+			);
+			name = CactusDemoTests;
+			productName = CactusDemoTests;
+			productReference = 6565385419FBACB80042D4CC /* CactusDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		65A8BE7B19B319390073BA02 /* cactus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65A8BE8319B319390073BA02 /* Build configuration list for PBXNativeTarget "cactus" */;
@@ -258,6 +399,13 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Pixelspark;
 				TargetAttributes = {
+					6565384119FBACB80042D4CC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					6565385319FBACB80042D4CC = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 6565384119FBACB80042D4CC;
+					};
 					65A8BE7B19B319390073BA02 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -269,6 +417,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 65A8BE7319B319390073BA02;
 			productRefGroup = 65A8BE7D19B319390073BA02 /* Products */;
@@ -276,11 +425,74 @@
 			projectRoot = "";
 			targets = (
 				65A8BE7B19B319390073BA02 /* cactus */,
+				6565384119FBACB80042D4CC /* CactusDemo */,
+				6565385319FBACB80042D4CC /* CactusDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		6565384019FBACB80042D4CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6565384C19FBACB80042D4CC /* Images.xcassets in Resources */,
+				6565384F19FBACB80042D4CC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6565385219FBACB80042D4CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		6565383E19FBACB80042D4CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6565386219FBAD950042D4CC /* cactus.cpp in Sources */,
+				6565386319FBAD950042D4CC /* CCamera.cpp in Sources */,
+				6565386419FBAD950042D4CC /* CColor.cpp in Sources */,
+				6565386519FBAD950042D4CC /* CLight.cpp in Sources */,
+				6565386619FBAD950042D4CC /* CLightmap.cpp in Sources */,
+				6565386719FBAD950042D4CC /* CLWOImporter.cpp in Sources */,
+				6565386819FBAD950042D4CC /* CMaterial.cpp in Sources */,
+				6565386919FBAD950042D4CC /* CMatrix.cpp in Sources */,
+				6565386A19FBAD950042D4CC /* CObject.cpp in Sources */,
+				6565386B19FBAD950042D4CC /* CObjectFactory.cpp in Sources */,
+				6565386C19FBAD950042D4CC /* CPostBlur.cpp in Sources */,
+				6565386D19FBAD950042D4CC /* CPostGrayscale.cpp in Sources */,
+				6565386E19FBAD950042D4CC /* CPostNegator.cpp in Sources */,
+				6565386F19FBAD950042D4CC /* CPostReplaceColor.cpp in Sources */,
+				6565387019FBAD950042D4CC /* CPreSubtract.cpp in Sources */,
+				6565387119FBAD950042D4CC /* CRasterizer.cpp in Sources */,
+				6565387219FBAD950042D4CC /* CRenderer.cpp in Sources */,
+				6565387319FBAD950042D4CC /* CScene.cpp in Sources */,
+				6565387419FBAD950042D4CC /* CSpline.cpp in Sources */,
+				6565387519FBAD950042D4CC /* CTexture.cpp in Sources */,
+				6565387619FBAD950042D4CC /* CTextureFactory.cpp in Sources */,
+				6565387719FBAD950042D4CC /* CTriangle.cpp in Sources */,
+				6565387819FBAD950042D4CC /* CVector.cpp in Sources */,
+				6565387919FBAD950042D4CC /* CVertex.cpp in Sources */,
+				6565387A19FBAD950042D4CC /* smart_pointer.cpp in Sources */,
+				6565384A19FBACB80042D4CC /* AppDelegate.mm in Sources */,
+				6565384719FBACB80042D4CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6565385019FBACB80042D4CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6565385B19FBACB80042D4CC /* CactusDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65A8BE7819B319390073BA02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,7 +528,94 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6565385619FBACB80042D4CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6565384119FBACB80042D4CC /* CactusDemo */;
+			targetProxy = 6565385519FBACB80042D4CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6565384D19FBACB80042D4CC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6565384E19FBACB80042D4CC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		6565385C19FBACB80042D4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CactusDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6565385D19FBACB80042D4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CactusDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6565385E19FBACB80042D4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CactusDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CactusDemo.app/Contents/MacOS/CactusDemo";
+			};
+			name = Debug;
+		};
+		6565385F19FBACB80042D4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CactusDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CactusDemo.app/Contents/MacOS/CactusDemo";
+			};
+			name = Release;
+		};
 		65A8BE8119B319390073BA02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -408,6 +707,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6565386019FBACB80042D4CC /* Build configuration list for PBXNativeTarget "CactusDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6565385C19FBACB80042D4CC /* Debug */,
+				6565385D19FBACB80042D4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6565386119FBACB80042D4CC /* Build configuration list for PBXNativeTarget "CactusDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6565385E19FBACB80042D4CC /* Debug */,
+				6565385F19FBACB80042D4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		65A8BE7719B319390073BA02 /* Build configuration list for PBXProject "cactus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
