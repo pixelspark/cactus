@@ -18,6 +18,8 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 #include "../include/cactus.h"
 using namespace cactus;
 
+#ifndef NO_LWO_IMPORTER
+
 CObject* CLWOImporter::FromLWO (const char* lpszFilePath) {
 	FILE *file;
 	CObject	*pObject = NULL;
@@ -211,3 +213,5 @@ float CLWOImporter::SwapEndian (float num) {
 	
 	return tool.a;
 }
+
+#endif

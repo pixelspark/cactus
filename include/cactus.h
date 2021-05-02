@@ -46,6 +46,7 @@ such that	idx3d_Matrix.rotateSelf becomes CMatrix.RotateSelf.
 // application. This is very useful though. All functions that need to be exported must be defined with CACTUS_API.
 // ---------------------------------------------------------------------------------------------------------------------------------------------------
 
+#ifndef CACTUS_API
 #ifdef __MACH__
     #define CACTUS_API
 #else
@@ -54,6 +55,7 @@ such that	idx3d_Matrix.rotateSelf becomes CMatrix.RotateSelf.
     #else
         #define CACTUS_API __declspec(dllimport)
     #endif
+#endif
 #endif
 
 // system includes
@@ -98,7 +100,7 @@ namespace cactus {
 
 	// cactus includes
 	#include "ColorMacros.h"
-	#include "TweakFPU.h"
+	#include "tweakfpu.h"
 	#include "Constants.h"
 	#include "Inlines.h"
 	#include "CMath.h"
